@@ -1,0 +1,7 @@
+pip install -U platformio
+platformio run -e node32s
+platformio device list
+
+platformio run -t monitor -e node32s --monitor-port COM3
+platformio run -t upload -e node32s --upload-port COM3
+platformio run -t uploadfs -e node32s --upload-port COM3
